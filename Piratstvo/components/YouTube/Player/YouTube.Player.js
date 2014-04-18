@@ -269,7 +269,7 @@ function initialize() {
         });
     };
     CYouTubeIFramePlayer.prototype = controls.control_prototype;
-    CYouTubeIFramePlayer.outer_template = function(it) { return '<div' + it.printAttributes() + '></div>\n'; };
+    CYouTubeIFramePlayer.outer_template = function(it) { return '<div class="flex-video"><div ' + it.printAttributes() + '></div></div>\n'; };
     controls.typeRegister('YouTube.Player', CYouTubeIFramePlayer);
 
 

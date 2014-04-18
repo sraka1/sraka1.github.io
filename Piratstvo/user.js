@@ -16,16 +16,16 @@ $DOC.parseContent(function(){/*
  * [Zgodovina](#5-zgodovina)
  * [Omejitve](#6-omejitve)
  * [Gospodarski vpliv](#7-gospodarski-vpliv)
- * [Distribucijski kanali](#7-gospodarski-vpliv)
-  * [Scena](#7-gospodarski-vpliv)
-  * [P2P omrežja](#7-gospodarski-vpliv)
-   * [Torrenti](#7-gospodarski-vpliv)
-   * [Alternative](#7-gospodarski-vpliv)
-  * [Usenet](#7-gospodarski-vpliv)
- * [Implementacija distribucijskega kanala](#7-gospodarski-vpliv)
- * [Zaključek](#7-gospodarski-vpliv)
- * [Literatura](#7-gospodarski-vpliv)
-* [Izdelek](http://54.247.82.135/)
+ * [Distribucijski kanali](#8-distribucijski-kanali)
+  * [Scena](#8-1-scena)
+  * [P2P omrežja](#8-2-p2p-omre-ja)
+     * [Torrenti](#8-2-1-torrenti)
+     * [Alternative](#8-2-2-alternative)
+  * [Usenet](#8-3-usenet)
+ * [Implementacija distribucijskega kanala](#9-implementacija-distribucijskega-kanala)
+ * [Zaključek](#10-zaklju-ek)
+ * [Literatura](#11-literatura)
+* [Izdelek](http://54.247.82.135)
 [/navbar]
 -->
 
@@ -37,3 +37,19 @@ $DOC.sections['footer-panel'] =
 ***\n\
 * [Izdano pod MIT licenco.](https://github.com/sraka1/Piratstvo)\
 [/footer-layout]';
+
+$(window).on('hashchange', function() {
+  var target = $('#'+location.href.split("#")[1]);
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 67 //offset za header
+        }, 1);
+        return false;
+      }
+});
+
+$(document).ready(function() {
+  $('iframe').each(function() {
+    $(this).wrap('<div class="flex-video"></div>');
+  });
+});
