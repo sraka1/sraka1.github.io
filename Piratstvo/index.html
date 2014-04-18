@@ -18,7 +18,7 @@
 
 <!--content-panel
 ## 1. Povzetek
-Piratstvo je zelo pereč problem.
+Naslov te seminarske naloge je Piratstvo, ena najaktualnejših tem v računalniški znanosti, ter tudi v pravni. Tehnologija, na kateri piratstvo temelji, se razvija vsakodnevno, posledično pa so protokoli, ki so bili primarno namenjeni za piratsko distribucijo datotek, dobili tudi prepoznavnost v širši računalniški sferi. Zaradi nekolikšne vpletenosti v piratstvo, vsaj kar se tiče tehnološke plati, sem se odločil, da bom to temo opisal za seminarsko nalogo pri informatiki.
 
 
 ## 2. Kazalo
@@ -49,7 +49,7 @@ Piratstvo označuje distribucijo, kopiranje, razširjanje in uporabo avtorskih d
 Termin piratstvo nekoliko nepričakovano predatira pojav kršitev intelektualnih pravic digitalnih vsebin, saj se je pojavil že v začetku 17. stoletja. V takratnem času so kot piratje bili označeni kršitelji avtorskih pravic publikacij izdanih s strani izdajateljev, ki so jih za to delo pooblastili angleški monarhi. Sprva se je izraz uporabljal le za označevanje oseb, ki so povzročile kršitve z namenom osebne materialne koristi. Dandanes pa se izraz vse bolj generalizira. Kljub ekstenzivni uporabi v javnih občilih in pogovornem jeziku pa izraz vseeno še ni del najnovejše (spletne) izdaje Slovarja slovenskega knjižnega jezika.
 
 ## 5. Zgodovina
-Digitalno piratstvo se je začelo že v poznih šestdesetih letih in nato sedemdesetih, ko interneta še ni bilo. Takrat so bili ljudje, ki so hodili s kamerami v kino in nato na ulici prodajali filme pod ceno, predvsem za mladostnike, ki si filmov v kinu še niso mogli ogledati. Šlo je za presnemavanje kaset, pozneje zgoščenk in vedno, ko je tehnologija napredovala, so bili pirati v koraku z njo. 
+Digitalno piratstvo se je v nekoliko drugačni obliki začelo že v poznih šestdesetih letih in nato sedemdesetih, ko interneta še ni bilo. Takrat so ljudje hodili s kamerami v kino in nato na ulici prodajali filme pod ceno, predvsem za mladostnike, ki si filmov v kinu še niso mogli ogledati. Šlo je za presnemavanje kaset, pozneje zgoščenk in vedno, ko je tehnologija napredovala, so bili pirati v koraku z njo. 
 ![Skladišče ilegalno presnetih filmov](http://blogs.mirror.co.uk/investigations/css/Southall-270309.jpg)
 Slika 0: Skladišče ilegalnih vsebin
 
@@ -110,7 +110,7 @@ Usenet je največja svetovna elektronska oglasna deska, ki ljudem s skupnimi int
 Kot izdelek, ki ga prilagam k nalogi sem postavil zasebni torrent sledilnik na IP naslovu 54.247.82.135 (vrata 34000). 
 
 ### 9.1 Sledilnik
-Ime programa, ki poganja sledilnik je Ocelot, gre pa za trenutno najbolj učinkovito prosto dostopno implementacijo sledilnika. V celoti je napisan v C-ju, implementiran pa je večnitno, kar pomeni, da se zlahka skalira na več tisoč uporabnikov.
+Sledilnik poganja odprtokodna rešitev Ocelot; gre pa za trenutno najbolj učinkovito prosto dostopno implementacijo sledilnika. V celoti je napisana v C++-u, implementirana pa je v celoti večnitno, kar pomeni, da se zlahka skalira na več tisoč uporabnikov. Tudi sam sem prispeval kodo, in sicer sem razrešil več hroščev, katerim vzrok je bil t.i. race condition zaradi napak pri mutual exclusionu, prav tako pa sem eliminaril nekaj memory leakov.
 
 ### 9.2 Spletni vmesnik
 Funkcionalnost sledilnika bistveno dopolnjuje spletno mesto, katerega vloga je indeksiranje, iskanje ter debata o naloženih torrentih in je prav tako dostopno na naslovu 54.247.82.135. Spletno mesto poganja odprtokodni projekt Gazelle, ki je dostopen na naslovu github.com/WhatCD/gazelle. Pri obeh projektih sem aktivno sodeloval in tudi sam prispeval veliko kode, vseeno pa sem za uporabo moral narediti veliko sprememb. Spletno mesto spremlja tudi IRC strežnik, ki je ostal norma za neposredno komunikacijo med uporabniki zasebnih torrent sledilnikov. Tudi tukaj sem sam implementiral avtentikacijo uporabnikov ter nekatere napredne funkcije, ki so dostopne kot ukazi znoraj pogovornih sob. Dostopen je na vratih 6667.
@@ -120,12 +120,16 @@ Slika 3: spletno mesto
 
 Spletno mesto sem poimenoval po nekdaj najbolj popularnem Slovenskem sledilniku "Golden Tomb", ki pa je leta 2006 zaradi domnevnih težav z zakonom svoja vrata moral zapreti.
 
+Za namene predstavitve sem ustvari demonstrativni račun, katerega uporabniško ime je "demo@qy.si", geslo pa "demo123".
+
 ## 10. Zaključek
-Velika svetovna razširjenost piratstva je dejstvo, ki se ga ne da zanikati. Vsekakor je potrebno problem razrešiti v korist vseh sodelujočih.
+Velika svetovna razširjenost piratstva je dejstvo, ki se ga ne da zanikati. Problema se ne da rešiti čez noč in nima smisla poskušati. Verjamem, da sodne prepovedi in mnogovrstne kazni niso rešitev, temveč bi morali avtorji del sami uporabiti distribucijske kanale, ki se jih poslužuje piratska scena ter jih uporabiti za razširjanje lastnih vsebin. Nato pa bi uporabnike, po tem ko so vsebino probali in se odločili, če jim je všeč, pozvali, da oddajo svoj prispevek. Vsekakor je to ena izmed večih možnih rešitev, a problema se je potrebno lotiti čimprej.
 
 ## 11. Literatura
 * http://sl.wikipedia.org/wiki/Piratstvo
 * http://en.wikipedia.org/wiki/Copyright_infringement
+* http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html
+* http://whatcd.github.io/Gazelle/
 
 
 -->
