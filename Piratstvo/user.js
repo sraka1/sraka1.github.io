@@ -23,8 +23,9 @@ $DOC.parseContent(function(){/*
      * [Alternative](#8-2-2-alternative)
   * [Usenet](#8-3-usenet)
  * [Implementacija distribucijskega kanala](#9-implementacija-distribucijskega-kanala)
- * [Zaključek](#10-zaklju-ek)
- * [Literatura](#11-literatura)
+ * [Prihodnost](#10-prihodnost)
+ * [Zaključek](#11-zaklju-ek)
+ * [Literatura](#12-literatura)
 * [Izdelek](http://54.247.82.135)
 [/navbar]
 -->

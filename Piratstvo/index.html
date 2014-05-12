@@ -112,29 +112,33 @@ Usenet je največja svetovna elektronska oglasna deska, ki ljudem s skupnimi int
 Kot izdelek, ki ga prilagam k nalogi sem postavil zasebni torrent sledilnik na IP naslovu 54.247.82.135 (vrata 34000). 
 
 ### 9.1 Sledilnik
-Sledilnik poganja odprtokodna rešitev Ocelot; gre pa za trenutno najbolj učinkovito prosto dostopno implementacijo sledilnika. V celoti je napisana v C++-u, implementirana pa je v celoti večnitno, kar pomeni, da se zlahka skalira na več tisoč uporabnikov. Tudi sam sem prispeval kodo, in sicer sem razrešil več hroščev, katerim vzrok je bil t.i. race condition zaradi napak pri mutual exclusionu, prav tako pa sem eliminaril nekaj memory leakov.
+Sledilnik poganja odprtokodna rešitev Ocelot; gre pa za trenutno najbolj učinkovito prosto dostopno implementacijo sledilnika. V napisana je v C++-u, implementirana pa je v celoti večnitno, kar pomeni, da se zlahka skalira na več tisoč uporabnikov. Je skladen z RFC protokolom za BitTorrent, da se ga pa z lahkoto konfigurirati. Še posebej je prilagojen za zasebne sledilnike, a se ga da uporabiti tudi za javne. Tudi sam sem prispeval kodo, in sicer sem razrešil več hroščev, katerim vzrok je bil t.i. race condition zaradi napak pri mutual exclusionu, prav tako pa sem eliminiral nekaj memory leakov.
 
 ### 9.2 Spletni vmesnik
-Funkcionalnost sledilnika bistveno dopolnjuje spletno mesto, katerega vloga je indeksiranje, iskanje ter debata o naloženih torrentih in je prav tako dostopno na naslovu http://54.247.82.135/. Spletno mesto poganja odprtokodni projekt Gazelle, ki je dostopen na naslovu github.com/WhatCD/gazelle. Pri obeh projektih sem aktivno sodeloval in tudi sam prispeval veliko kode, vseeno pa sem za uporabo moral narediti veliko sprememb. Spletno mesto spremlja tudi IRC strežnik, ki je ostal norma za neposredno komunikacijo med uporabniki zasebnih torrent sledilnikov. Tudi tukaj sem sam implementiral avtentikacijo uporabnikov ter nekatere napredne funkcije, ki so dostopne kot ukazi znoraj pogovornih sob. Dostopen je na vratih 6667.
+Funkcionalnost sledilnika bistveno dopolnjuje spletno mesto, katerega vloga je indeksiranje, iskanje ter debata o naloženih torrentih in je prav tako dostopno na naslovu http://54.247.82.135/. Spletno mesto poganja odprtokodni projekt Gazelle, ki je dostopen na naslovu github.com/WhatCD/gazelle. Pri obeh projektih sem aktivno sodeloval in tudi sam prispeval veliko kode, vseeno pa sem za uporabo moral narediti veliko sprememb. Programski paket Gazelle sem prav zaradi tega projekta tudi večinsko prevedel v slovenščino, vseeno pa ostaja nekaj neprevedenih strani (ki bodo prevedene kmalu). Spletno mesto spremlja tudi IRC strežnik, ki je ostal norma za neposredno komunikacijo med uporabniki zasebnih torrent sledilnikov. Tudi tukaj sem sam implementiral avtentikacijo uporabnikov ter nekatere napredne funkcije, ki so dostopne kot ukazi znoraj pogovornih sob. Dostopen je na vratih 6667.
 
 ![Prijava v spletni vmesnik](slika1.png)
 Slika 3: prijava v spletno mesto
 
-Spletno mesto sem poimenoval po nekdaj najbolj popularnem Slovenskem sledilniku "Golden Tomb", ki pa je leta 2006 zaradi domnevnih težav z zakonom svoja vrata moral zapreti.
+Spletno mesto sem poimenoval po nekdaj najbolj popularnem slovenskem sledilniku "Golden Tomb", ki pa je leta 2006 zaradi domnevnih težav z zakonom svoja vrata moral zapreti.
 
 ![Spletni vmesnik](slika2.png)
 Slika 4: zasebni del spletnega vmesnika
 
 Za namene predstavitve sem ustvari demonstrativni račun, katerega uporabniško ime je "stane", geslo pa "demo123".
 
-## 10. Zaključek
+## 10. Prihodnost
+Vsekakor vidim prihodnost piratstva v programski opremi, ki bo računalniškim laikom poenostavila dostop do piratskih vsebin. Velik vzor temu trendu je odprtokodni programski paket "Popcorn Time" ([Dostopen tukaj](http://www.time4popcorn.eu/)), ki uporabniku preko enostavnega uporabniškega vmesnika na namiznih računalnikih omogoča takorekoč takojšen dostop do piratiziranih filmov in TV Serij.
+
+## 11. Zaključek
 Velika svetovna razširjenost piratstva je dejstvo, ki se ga ne da zanikati. Problema se ne da rešiti čez noč in nima smisla poskušati. Verjamem, da sodne prepovedi in mnogovrstne kazni niso rešitev, temveč bi morali avtorji del sami uporabiti distribucijske kanale, ki se jih poslužuje piratska scena ter jih uporabiti za razširjanje lastnih vsebin. Nato pa bi uporabnike, po tem ko so vsebino probali in se odločili, če jim je všeč, pozvali, da oddajo svoj prispevek. Vsekakor je to ena izmed večih možnih rešitev, a problema se je potrebno lotiti čimprej.
 
-## 11. Literatura
-* http://sl.wikipedia.org/wiki/Piratstvo
-* http://en.wikipedia.org/wiki/Copyright_infringement
-* http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html
-* http://whatcd.github.io/Gazelle/
+## 12. Literatura
+*  http://sl.wikipedia.org/wiki/Piratstvo, pridobljeno 12. aprila 2014 ob 18:30
+*  http://en.wikipedia.org/wiki/Copyright_infringement, pridobljeno 12. aprila 2014 ob 19:41
+*  http://jonas.nitro.dk/bittorrent/bittorrent-rfc.html, pridobljeno 12. aprila 2014 ob 20:33
+*  http://whatcd.github.io/Gazelle/, pridobljeno 13. aprila 2014 ob 18:30
+*  http://www.time4popcorn.eu/, pridobljeno 14. aprila 2014 ob 23:12
 
 
 -->
